@@ -72,8 +72,17 @@
           font-weight: 500;
           font-size: 18px;
       }
-      @media (min-width:430px) {
+      @media (max-width:768px) {
       .search-box {width:70%}
+      .newcss{
+         grid-template-columns: auto auto;
+      }
+    }
+      @media (max-width:430px) {
+      .search-box {width:70%}
+      .newcss{
+        grid-template-columns:  auto;
+      }
      }
   </style>
 </head>
