@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title> Events Home</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      /* background-color: #0A0C1B; */
+      background:linear-gradient(to left bottom,rgb(249, 38, 144),#A464D3);
+      min-height: 100vh;
+      font-family:monospace;
+    }
+    .newcss{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+        gap: 15px;
+      }
+      .search-box{
+          width: 40%;
+          margin:30px auto;
+      }
+      .search-input {
+          width: 100%;
+          height: 40px;
+          border-radius: 10px;
+          border:none;
+          padding-left: 10px;
+          outline: none;
+      }
+      .search-input:focus,.search-input:hover{
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+      .search-input::placeholder {
+          text-align: center;
+          font-weight: bold;
+      }
+      .card-content{
+          background-color: #fff;
+          padding: 10px;
+          text-align: center;
+          border-radius: 10px;
+          width: 200px;
+      }
+      .card-content:hover{
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+      .btn {
+          background-color: #000;
+          color:#fff;
+          border-radius: 5px;
+          padding:10px;
+          cursor: pointer;
+          
+      }
+      .btn:hover{
+        background-color: #fff;
+        color:#000;
+        border:1px solid #000;
+        border-radius: 5px;
+      }
+      .info{
+          font-weight: 500;
+          font-size: 18px;
+      }
+      @media (min-width:430px) {
+      .search-box {width:70%}
+     }
+  </style>
+</head>
+<body>
+    <section class="search">
+        <div class="search-box">
+            <input type="text" autocomplete="off" class="search-input" id="eventSearch" onkeyup="searchEvent()" placeholder="Search Events By Name...">
+        </div>
+    </section>
+    <section>
+        <div class="newcss"></div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
